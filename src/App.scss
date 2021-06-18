@@ -1,0 +1,50 @@
+@import "./styles/singlepermit.scss";
+
+.App {
+  font-family: "Poppins";
+}
+.page-header {
+  font-size: 18px;
+  font-weight: 600;
+  padding-left: 12px;
+  margin: 32px 0;
+}
+.top-right-nav-item {
+  display: flex;
+}
+.mobile-menu {
+  display: none;
+}
+
+/* Mobile screens */
+@media only screen and (max-width: 767px) {
+  .sideNavbar-layout {
+    display: none !important;
+  }
+  .top-right-nav-item {
+    display: none !important;
+  }
+  .mobile-menu {
+    display: block !important;
+    svg {
+      width: 36px;
+      height: 36px;
+      color: #054a90;
+      margin-right: 12px;
+    }
+  }
+}
+
+/* Computer / Desktop / iPad Landscape */
+@media only screen and (min-width: 992px) {
+  .--mobile-only {
+    display: none;
+  }
+}
+
+/* Tablet / iPad Portrait screnes */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .--computer-only {
+    display: none;
+  }
+}

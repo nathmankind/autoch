@@ -1,0 +1,47 @@
+@import "../../BaseStyles/variables.scss";
+
+.permit-card {
+  background: white;
+  border-radius: 8px;
+
+  .permit__card-main {
+    h4 {
+      text-transform: capitalize;
+      font-weight: 600;
+      font-size: 16px;
+      margin-bottom: 0;
+    }
+    h6 {
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 14px;
+      margin-bottom: 0;
+      color: gray;
+    }
+    p {
+      text-transform: lowercase;
+      margin-bottom: 0;
+    }
+    .description-header {
+      color: gray;
+      font-weight: 600;
+    }
+  }
+
+  .permit__card-footer {
+    color: $primary-color;
+    border-top: 1px solid grey;
+    .text {
+      text-transform: capitalize;
+      font-weight: 500;
+      cursor: pointer;
+    }
+  }
+
+  .icon-box {
+    color: white;
+    border-radius: 5px;
+    background: $primary-color;
+    cursor: pointer;
+  }
+}

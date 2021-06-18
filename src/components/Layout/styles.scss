@@ -1,0 +1,95 @@
+@import "../../BaseStyles/variables.scss";
+
+.main-layout__wrapper {
+  background: #efefef;
+  height: 100vh;
+  .app__logo {
+    img {
+      width: 55%;
+    }
+  }
+
+  .main-body-container {
+    flex: 1 1;
+    padding: 0 12px 24px 0;
+    overflow-y: auto;
+    height: 100vh;
+    .layout__main-content {
+      margin-top: 100px;
+    }
+  }
+
+  .sideNavbar-layout {
+    background: #044a90;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    // z-index: 99;
+
+    .sidenav {
+      width: 100%;
+      overflow-y: auto;
+      height: 100vh;
+      .sidenavigation-item {
+        font-size: 18px;
+        text-transform: capitalize;
+        color: white;
+        font-weight: 600;
+        margin-top: 120px;
+      }
+    }
+  }
+}
+
+.main__navbar {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  z-index: 99;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+}
+
+// Top nav bar
+
+.application-logo {
+  width: 250px;
+  background: $primary-color;
+  .logo-img {
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+  }
+}
+.topnav {
+  background: white;
+  width: 100%;
+}
+.top-right-nav-item {
+  img {
+    width: 50px;
+    border-radius: 50%;
+  }
+  .user-info {
+    margin-left: 8px;
+    .name {
+      font-size: 14px;
+      font-weight: 500;
+    }
+    .designation {
+      font-size: 10px;
+      font-weight: 500;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .application-logo {
+    background: transparent;
+    .logo-img {
+      color: $primary-color;
+    }
+  }
+}
